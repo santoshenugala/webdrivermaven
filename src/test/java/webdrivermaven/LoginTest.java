@@ -32,6 +32,8 @@ public class LoginTest {
 	        WebElement passwordField = driver.findElement(By.name("password"));
 	        passwordField.sendKeys("your-password"); // Replace with your password
 	        driver.findElement(By.id("passwordNext")).click();
+	        driver.findElement(By.id("SignIn")).click();
+	        
 	        Thread.sleep(3000); // Wait for login to complete
 
 	        // Validate login by checking for Gmail Inbox URL
